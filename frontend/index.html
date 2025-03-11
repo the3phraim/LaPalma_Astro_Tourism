@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stargazing Bungalows La Palma</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #0b132b;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+        }
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('../static/images/gelaende.jpg') no-repeat center center/cover;
+            height: 80vh;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-black bg-opacity-70 p-4 fixed w-full z-10 top-0">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Stargazing Bungalows</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#about" class="hover:text-gray-400">Über uns</a></li>
+                <li><a href="#bungalows" class="hover:text-gray-400">Bungalows</a></li>
+                <li><a href="#contact" class="hover:text-gray-400">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero flex justify-center items-center text-center">
+        <div>
+            <h2 class="text-5xl font-bold">Erlebe den Sternenhimmel auf La Palma</h2>
+            <p class="text-lg mt-4">Entspanne in unseren Bungalows und genieße einen unvergleichlichen Blick ins Universum.</p>
+            <a href="#bungalows" class="mt-6 inline-block px-8 py-4 bg-gray-800 bg-opacity-80 hover:bg-opacity-100 text-white text-lg rounded-lg transition-all duration-300">
+                Mehr erfahren
+            </a>
+        </div>
+    </section>
+
+    <!-- Über uns -->
+    <section id="about" class="py-20 px-4 text-center">
+        <h2 class="text-4xl font-semibold">Über uns</h2>
+        <p class="mt-4 max-w-3xl mx-auto text-lg">Wir bieten nachhaltige Bungalows in einer der besten Gegenden für Sternenbeobachtung. Genieße die Ruhe und den atemberaubenden Blick in den Nachthimmel.</p>
+    </section>
+
+    <!-- Bungalows -->
+    <section id="bungalows" class="py-20 px-4 bg-gray-900">
+        <h2 class="text-4xl font-semibold text-center mb-12">Unsere Bungalows</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 container mx-auto">
+            <!-- Bungalow Luna -->
+            <div class="text-center">
+                <img src="../static/images/bungalow_luna.png" alt="Bungalow Luna" class="w-full h-80 object-cover rounded-lg shadow-lg">
+                <h3 class="text-2xl font-bold mt-4">Bungalow Luna</h3>
+                <p class="text-lg mt-2">Perfekt für Paare – mit Panoramafenster für Sternenbeobachtung und eigenem Teleskop.</p>
+            </div>
+
+            <!-- Bungalow Sol -->
+            <div class="text-center">
+                <img src="../static/images/bungalow_2.png" alt="Bungalow Sol" class="w-full h-80 object-cover rounded-lg shadow-lg">
+                <h3 class="text-2xl font-bold mt-4">Bungalow Sol</h3>
+                <p class="text-lg mt-2">Komfort und Naturverbundenheit mit eigenem Teleskop.</p>
+            </div>
+
+            <!-- Bungalow Estrella -->
+            <div class="text-center">
+                <img src="../static/images/bungalow_3.png" alt="Bungalow Estrella" class="w-full h-80 object-cover rounded-lg shadow-lg">
+                <h3 class="text-2xl font-bold mt-4">Bungalow Estrella</h3>
+                <p class="text-lg mt-2">Luxus und Entspannung mit privater Terrasse auf La Palma.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="contact" class="py-20 px-4 text-center">
+        <h2 class="text-4xl font-semibold">Kontaktiere uns</h2>
+        <p class="mt-4 text-lg">Hast du Fragen? Schreib uns eine Nachricht.</p>
+        <form class="mt-8 max-w-lg mx-auto">
+            <input type="text" placeholder="Dein Name" class="w-full p-4 rounded-lg bg-gray-700 border border-gray-500 text-white mb-4">
+            <input type="email" placeholder="Deine E-Mail" class="w-full p-4 rounded-lg bg-gray-700 border border-gray-500 text-white mb-4">
+            <textarea placeholder="Deine Nachricht" class="w-full p-4 rounded-lg bg-gray-700 border border-gray-500 text-white mb-4"></textarea>
+            <button class="mt-6 inline-block px-8 py-4 bg-gray-800 bg-opacity-80 hover:bg-opacity-100 text-white text-lg rounded-lg transition-all duration-300">Senden</button>
+        </form>
+    </section>
+</body>
+</html>
