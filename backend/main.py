@@ -7,7 +7,7 @@ app = FastAPI()
 
 # Get the absolute path of the frontend folder
 BASE_DIR = Path(__file__).resolve().parent.parent
-TEMPLATE_PATH = BASE_DIR / "frontend" / "index.html"
+TEMPLATE_PATH = BASE_DIR / "index.html"
 
 @app.get("/", response_class=HTMLResponse)
 async def read_root():
